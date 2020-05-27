@@ -27,9 +27,58 @@
    <title>Travel theme</title>
   </head>
   <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="" class="brand-logo">++Studios</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li>
+              <a href="">
+                <span class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="btn-floating btn-small tooltipped grey darken-2" data-tooltip="LinkedIN">
+                  <i class="fab fa-linkedin-in"></i>
+                </span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </header>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $(".sidenav").sidenav();
+      });
+    </script>
 </body>
 </html>
